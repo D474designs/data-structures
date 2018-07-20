@@ -25,3 +25,5 @@ var Stack = function() {
  Stack.prototype.size = function() {
      return this.counter;
 };
+
+// var instance = new Stack();

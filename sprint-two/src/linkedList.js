@@ -4,9 +4,14 @@ var LinkedList = function() {
   list.tail = null;
 
   list.addToTail = function(value) {
+     this.tail = Node(value);
   };
 
   list.removeHead = function() {
+    var garfield = this.head;
+    delete this.head;
+    this.head = node.next;
+    return garfield;
   };
 
   list.contains = function(target) {

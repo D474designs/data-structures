@@ -25,8 +25,10 @@ var Queue = function() {
       return removed;
     }
   };
-  
+
   // return current queue size
   Queue.prototype.size = function(){
     return this.counter;
 };
+
+// var instance = new Stack();
