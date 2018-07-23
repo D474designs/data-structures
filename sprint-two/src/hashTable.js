@@ -86,7 +86,13 @@ var HashTable = function() {
 };
 
 HashTable.prototype.insert = function(k, v) {
+  // set _limit to size of input array
+  // this._limit = index.length;
+  // this._limit = LimitedArray.prototype.storage.length;
+  // this._limit = k.length;
+  // this._limit = this.storage[index].length;
   var index = getIndexBelowMaxForKey(k, this._limit);
+
   //check if this._storage[index] exists
   if (!this._storage[index]) {
     //if it doesn't, set it's value to an array
